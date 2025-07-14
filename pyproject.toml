@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autarch"
+version = "0.1.0"
+description = "Local agentic AI assistant wrapper for aider + vLLM"
+authors = [{name = "Topher"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+classifiers = [
+   "Development Status :: 3 - Alpha",
+   "Intended Audience :: Developers",
+   "License :: OSI Approved :: MIT License",
+   "Programming Language :: Python :: 3",
+   "Programming Language :: Python :: 3.9",
+   "Programming Language :: Python :: 3.10",
+   "Programming Language :: Python :: 3.11",
+   "Programming Language :: Python :: 3.12",
+   "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+   "aider-chat",
+   "vllm",
+]
+
+[project.scripts]
+autarch = "autarch:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/autarch"
+Repository = "https://github.com/yourusername/autarch"
+Issues = "https://github.com/yourusername/autarch/issues"
