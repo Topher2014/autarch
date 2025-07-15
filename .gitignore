@@ -57,3 +57,4 @@ htmlcov/
 pkg/
 src/
 .envrc
+.aider*
